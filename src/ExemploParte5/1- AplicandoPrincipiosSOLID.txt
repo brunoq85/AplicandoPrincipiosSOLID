@@ -1,0 +1,11 @@
+﻿Aplicando os princípios SOLID:
+
+A classe GerenciadorDeDesconto possui mais de uma responsabilidade.
+1- Calcula o desconto por fidelidade
+2- Calcula o desconto por status de conta de cliente
+
+Para corrigir, precisa-se aplicar o princípio da resposnsabilidade única (SRP)
+
+Solução:
+--> Cria-se uma interface ICalculaDescontoFidelidade e;
+--> E cria-se uma classe CalculaDescontoFidelidade que implemente a interface.

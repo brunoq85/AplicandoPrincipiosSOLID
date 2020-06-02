@@ -1,0 +1,16 @@
+﻿Aplicando princípios SOLID:
+
+Por mais que se tenha feito uso da criação de classes separando as responsabilidades, o código continuma com forte 
+acoplamento, pois na classe GerenciadorDeDesconto, possui duas responsabilidades, além de aplicar desconto pelo 
+status da conta, também está fazendo uso de aplicar desconto por fidelidade.
+
+Então para resolver esses problemas:
+=> Remover a criação dos objetos das classes concretas do status da conta do cliente para outra classe.
+=> Criar uma classe que vai atuar como uma fábrica de objetos com base no status da conta do cliente.
+
+O que fazer para desacoplar a criação das instâncias das classes concretas da classe GerenciadorDeDesconto?
+=> Criar uma interface ICalculaDescontoStatusContaFactory e a sua classe concreta.
+=> E criar uma classe concreta que implemente a interface, pois essa classe terá o objetivo de centralizar
+a criação dos objetos atuando como uma fábrica, com base no status da conta do cliente.
+
+Ao final, podemos testar na classe Program.

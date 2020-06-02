@@ -1,0 +1,4 @@
+﻿Corrigindo o BUG oculto
+
+1- Incluir uma cláusula default na instrução de comando switch-case.
+2- Se um valor para o status da conta não estiver sendo tratado, será lançado uma exceção.s

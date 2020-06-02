@@ -1,0 +1,11 @@
+﻿Aplicando os princípios SOLID:
+
+1- Desacoplar o cáculo do preço com base no status da conta do cliente
+
+--> Cria-se uma interface ICalculaDescontoStatusConta 
+--> E cria-se 4 classes que irá implementar o cálculo do desconto com base no status da conta do cliente
+	Classes concretas:
+	=> ClienteNaoRegistrado
+	=> ClienteComum
+	=> ClienteEspecial
+	=> ClienteVip

@@ -1,0 +1,4 @@
+﻿Usando Enum
+
+1- Definir o status das contas, substituindo os números mágicos nas instruções ifs.
+2- Substituir as instruções if-then-else por switch.

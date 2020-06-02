@@ -1,0 +1,31 @@
+﻿Problema na Nomemclarura:
+1- O que faz a classe "GerDesc"?
+2- O que faz o método "Calcular()"? Calcula o que?
+3- O que significam os parâmetros "valor", "tipo" e "anos"?
+4- O que significa "desc"?
+5- O que representa o seu cálculo?
+6- O que significa a variável "resultado"?
+7- O que significam os cálculos para "resultado"?
+
+Problema com os números mágicos:
+1- O que significa o número 5 no cálculo "desc"?
+2- O que significam os números 1, 2, 3 e 4 colocados nos blocos ifs?
+3- O que significam os números 0.1, 0.5 e 0.7 nos cálculos de resultado?
+
+Problema do BUG oculto:
+1- Caso seja incluído um novo status de cliente que não seja previsto no bloco if.
+=> Vai retornar o valor 0 (zero), pois nenhuma condição será satisfeita.
+
+Problema do código duplicado:
+1- O cálculo usado para o tipo igual a 2 é o mesmo código usado para o tipo igual a 4:
+resultado = ((0.1m * valor) - valor) - desc * ((0.1m * valor) - valor);
+resultado = ((0.5m * valor) - valor) - desc * ((0.5m * valor)- valor);
+
+Problema de múltiplas responsabilidades:    (viola o princípio SRP - Single Responsability Principle)
+                                            (viola o princípio OCP - Open Close Principle)
+                                            (viola o princípio DIP - Dependency Inversion Principle)
+1- Identificamos pelo menos 3 responsabilidades no método "Calcular()"
+    a) Escolher o algorítmo de cálculo;
+    b) Calcular o desconto de acordo com o status da conta;
+    c) Calcular o desconto pelo tempo de fidelidade do cliente;
+    d) Para incluir um novo status da conta de cliente teremos que alterar a classe "GerDesc".

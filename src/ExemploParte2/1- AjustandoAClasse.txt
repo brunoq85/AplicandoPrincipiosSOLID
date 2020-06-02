@@ -1,0 +1,17 @@
+﻿Ajustando a nomenclatura da classe
+
+Segundo a recomendação da Microsoft:
+1- Usar PascalCase para nomes de classes.
+2- Usar PascalCase para nomes de métodos.
+3- Usar CamelCase para nomes de variáveis e parâmetros de métodos.
+
+					Antes							Depois
+Nome da classe		GerDesc							GerenciadorDeDesconto
+Nome do método		Calcular						AplicarDesconto
+Parâmetros:
+					valor							precoProduto
+					tipo							statusContaCliente
+					anos							tempoDeContaEmAnos
+Variáveis locais:
+					resultado						precoAposDesconto
+					desc							descontoPorFidelidade

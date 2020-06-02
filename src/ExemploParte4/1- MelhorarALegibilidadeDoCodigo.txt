@@ -1,0 +1,16 @@
+﻿Melhorando a legibilidade do código:
+
+1- Dividir o código a seguir:
+precoDespoisDoDesconto = (preco - (0.5m * preco)) - descontoPorFidelidadePercentual * (preco -(0.5m * preco));
+
+Em duas linhas:
+precoDespoisDoDesconto = (preco - (0.5m * preco))
+precoDespoisDoDesconto = precoDespoisDoDesconto - (descontoPorFidelidadePercentual * descontoPorFidelidadePercentual);
+
+2- Alterar a forma de cálculo do cliente especial para:
+De: (0.7m * preco)
+Para: preco - (0.3m * preco)
+
+3- Dar significado ao número 5 usado no desconto de fidelidade 
+E aos números 0.1, 0.3 e 0.5 no cálculo do desconto.
+Podemos definir constantes usando a palavra const e criar uma classe estática.
